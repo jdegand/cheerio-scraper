@@ -1,0 +1,50 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+li {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 20px;
+  border-radius: 36px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  display: inline-flex;
+  padding: 0;
+}
+
+article {
+  background: #ddd;
+  padding: 20px;
+  width: fit-content;
+}
+
+.base-number {
+  background-color: #18488d;
+  color: #fff;
+  margin-right: 5px;
+}
+
+.star {
+  background-image: url('../images/star.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+}

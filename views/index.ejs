@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <main>
+      <article>
+        <h1>Latest Euro Millions Numbers</h1>
+        <% if(info) {%>
+        <h2><%= info.dateRow %></h2>
+        <ul>
+          <% for (var i = 0; i < info.balls.length ; i++) { %>
+              <li class="base-number"> <%= info.balls[i] %> </li>
+          <% } %>
+        </ul>
+        <ul>
+          <% for (var i = 0; i < info.stars.length ; i++) { %>
+              <li class="star"> <%= info.stars[i] %> </li>
+          <% } %>
+        </ul>
+        <div>
+          <h3>Millionaire Maker: <%= info.raffleCode %></h3>
+        </div>
+        </div>
+        <% } else { %>
+          <div>No data to display.</div>
+        <% } %>
+      </article>
+    </main>
+  </body>
+</html>
